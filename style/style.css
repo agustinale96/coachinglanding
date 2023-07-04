@@ -1,0 +1,75 @@
+header{
+    text-align: center;
+    
+}
+
+.tip {
+    /* background-color: rgb(239, 255, 255); */
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background-color: #F6F7FB; /* Color de fondo original */
+    transition: background-color 0.1s ease;
+}
+
+
+.tip:hover{
+    background-color: #E0E6FF;
+    border-radius: 8px;
+}
+
+.tip:hover,
+.tip:not(:hover) {
+  transition-delay: 0.1s; /* Retraso en la transición al sacar el cursor */
+}
+
+.card {
+    /* background-color: rgb(182, 182, 213); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Propiedad de sombra */
+    border-radius: 10px;
+}
+
+
+.felicitar {
+    /* display: flex; */
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 75px;
+}
+
+.conjunto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+    /* background-color: rgb(231, 255, 208); */
+}
+
+.contenedor-video {
+    width: 100%; /* Ajusta el ancho total según el contenedor */
+    overflow: hidden; /* Oculta el contenido que se desborde del contenedor */
+  }
+
+  
+.videocard {
+
+    width: 100%;
+    /* Ajusta el ancho total del video */
+    height: 300px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 8rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+
+}
+
+.palabraresaltada{
+    color: brown;
+    font-weight: bold;
+}
