@@ -1,6 +1,7 @@
-header{
+header {
     text-align: center;
-    
+    border-radius: 0 0 15px 15px
+
 }
 
 .tip {
@@ -8,19 +9,20 @@ header{
     display: flex;
     gap: 12px;
     padding: 12px;
-    background-color: #F6F7FB; /* Color de fondo original */
+    background-color: #F6F7FB;
+    /* Color de fondo original */
     transition: background-color 0.1s ease;
 }
 
-
-.tip:hover{
+.tip:hover {
     background-color: #E0E6FF;
     border-radius: 8px;
 }
 
 .tip:hover,
 .tip:not(:hover) {
-  transition-delay: 0.1s; /* Retraso en la transición al sacar el cursor */
+    transition-delay: 0.1s;
+    /* Retraso en la transición al sacar el cursor */
 }
 
 .card {
@@ -44,32 +46,57 @@ header{
     justify-content: center;
     align-items: center;
     gap: 57px;
-    /* background-color: rgb(231, 255, 208); */
+    /* background-color: rgb(84, 146, 27); */
 }
 
-.contenedor-video {
-    width: 100%; /* Ajusta el ancho total según el contenedor */
-    overflow: hidden; /* Oculta el contenido que se desborde del contenedor */
-  }
-
-  
 .videocard {
-
     width: 100%;
     /* Ajusta el ancho total del video */
-    height: 300px;
+    /* height: 300px; */
     /* Ajusta la altura según tus necesidades */
+    /* padding-bottom: 16px; */
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.btn-group-lg>.btn, .btn-lg {
-    --bs-btn-padding-y: 0.5rem;
-    --bs-btn-padding-x: 8rem;
-    --bs-btn-font-size: 1.25rem;
-    --bs-btn-border-radius: var(--bs-border-radius-lg);
-
-}
-
-.palabraresaltada{
+.palabraresaltada {
     color: brown;
     font-weight: bold;
+}
+
+.micard{
+    background-color: #f9f9f9;
+    border: 1px solid;
+    border-color: #D2D2D2;
+    border-radius: 8px;
+    /* padding: 20px; */
+}
+
+.micard-bottom{
+    padding: 20px;
+}
+
+.btn{
+    width: 100% !important;
+}
+
+
+@media (max-width:992px){
+    .conjunto {
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        /* background-color: rgb(231, 255, 208); */
+    }
+
+    .col-6 {
+        flex: 0 0 auto;
+        width: 85%;
+    }
+
+    .micard {
+    margin-bottom: 75px;
+    }
+
 }
